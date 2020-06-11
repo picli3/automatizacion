@@ -1,0 +1,514 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6350 2550 6700 2550
+$Comp
+L Sensor_Proximity:CNY70 U?
+U 1 1 5F8B7159
+P 7400 2450
+AR Path="/5F8B7159" Ref="U?"  Part="1" 
+AR Path="/5F89DAAF/5F8B7159" Ref="U?"  Part="1" 
+F 0 "U?" H 7400 2767 50  0000 C CNN
+F 1 "CNY70" H 7400 2676 50  0000 C CNN
+F 2 "OptoDevice:Vishay_CNY70" H 7400 2250 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83751/cny70.pdf" H 7400 2550 50  0001 C CNN
+	1    7400 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F8C46D9
+P 7850 2850
+F 0 "R?" H 7920 2896 50  0000 L CNN
+F 1 "220" H 7920 2805 50  0000 L CNN
+F 2 "" V 7780 2850 50  0001 C CNN
+F 3 "~" H 7850 2850 50  0001 C CNN
+	1    7850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2550 7850 2550
+Wire Wire Line
+	7850 2550 7850 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5F8C5ACA
+P 7850 3100
+AR Path="/5EE18B8E/5F8C5ACA" Ref="#PWR?"  Part="1" 
+AR Path="/5F8C5ACA" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8C5ACA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7850 2850 50  0001 C CNN
+F 1 "GND" H 7855 2927 50  0000 C CNN
+F 2 "" H 7850 3100 50  0001 C CNN
+F 3 "" H 7850 3100 50  0001 C CNN
+	1    7850 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3100 7850 3000
+Text GLabel 7850 2000 1    50   Input ~ 0
+Vil
+Wire Wire Line
+	7850 2000 7850 2350
+Wire Wire Line
+	7850 2350 7700 2350
+Text GLabel 7000 1950 1    50   Input ~ 0
+Vil
+Wire Wire Line
+	7000 1950 7000 2350
+Wire Wire Line
+	7000 2350 7100 2350
+$Comp
+L Device:R R?
+U 1 1 5F8CEECE
+P 7000 2900
+F 0 "R?" H 7070 2946 50  0000 L CNN
+F 1 "220" H 7070 2855 50  0000 L CNN
+F 2 "" V 6930 2900 50  0001 C CNN
+F 3 "~" H 7000 2900 50  0001 C CNN
+	1    7000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2750 7000 2550
+Wire Wire Line
+	7000 2550 7100 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5F8D0003
+P 7000 3150
+AR Path="/5EE18B8E/5F8D0003" Ref="#PWR?"  Part="1" 
+AR Path="/5F8D0003" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8D0003" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 2900 50  0001 C CNN
+F 1 "GND" H 7005 2977 50  0000 C CNN
+F 2 "" H 7000 3150 50  0001 C CNN
+F 3 "" H 7000 3150 50  0001 C CNN
+	1    7000 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3150 7000 3050
+Connection ~ 7000 2550
+Text HLabel 6350 2550 0    50   Output ~ 0
+PROX_1
+$Comp
+L Device:C C?
+U 1 1 5F8DC0B9
+P 6700 2900
+F 0 "C?" H 6586 2946 50  0000 R CNN
+F 1 "100nF" H 6586 2855 50  0000 R CNN
+F 2 "" H 6738 2750 50  0001 C CNN
+F 3 "~" H 6700 2900 50  0001 C CNN
+	1    6700 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2750 6700 2550
+Connection ~ 6700 2550
+Wire Wire Line
+	6700 2550 7000 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5F8DCAF4
+P 6700 3150
+AR Path="/5EE18B8E/5F8DCAF4" Ref="#PWR?"  Part="1" 
+AR Path="/5F8DCAF4" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8DCAF4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6700 2900 50  0001 C CNN
+F 1 "GND" H 6705 2977 50  0000 C CNN
+F 2 "" H 6700 3150 50  0001 C CNN
+F 3 "" H 6700 3150 50  0001 C CNN
+	1    6700 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3150 6700 3050
+Wire Wire Line
+	6350 4650 6700 4650
+$Comp
+L Sensor_Proximity:CNY70 U?
+U 1 1 5F8E480B
+P 7400 4550
+AR Path="/5F8E480B" Ref="U?"  Part="1" 
+AR Path="/5F89DAAF/5F8E480B" Ref="U?"  Part="1" 
+F 0 "U?" H 7400 4867 50  0000 C CNN
+F 1 "CNY70" H 7400 4776 50  0000 C CNN
+F 2 "OptoDevice:Vishay_CNY70" H 7400 4350 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83751/cny70.pdf" H 7400 4650 50  0001 C CNN
+	1    7400 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F8E4811
+P 7850 4950
+F 0 "R?" H 7920 4996 50  0000 L CNN
+F 1 "220" H 7920 4905 50  0000 L CNN
+F 2 "" V 7780 4950 50  0001 C CNN
+F 3 "~" H 7850 4950 50  0001 C CNN
+	1    7850 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4650 7850 4650
+Wire Wire Line
+	7850 4650 7850 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5F8E4819
+P 7850 5200
+AR Path="/5EE18B8E/5F8E4819" Ref="#PWR?"  Part="1" 
+AR Path="/5F8E4819" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8E4819" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7850 4950 50  0001 C CNN
+F 1 "GND" H 7855 5027 50  0000 C CNN
+F 2 "" H 7850 5200 50  0001 C CNN
+F 3 "" H 7850 5200 50  0001 C CNN
+	1    7850 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5200 7850 5100
+Text GLabel 7850 4100 1    50   Input ~ 0
+Vil
+Wire Wire Line
+	7850 4100 7850 4450
+Wire Wire Line
+	7850 4450 7700 4450
+Text GLabel 7000 4050 1    50   Input ~ 0
+Vil
+Wire Wire Line
+	7000 4050 7000 4450
+Wire Wire Line
+	7000 4450 7100 4450
+$Comp
+L Device:R R?
+U 1 1 5F8E4826
+P 7000 5000
+F 0 "R?" H 7070 5046 50  0000 L CNN
+F 1 "220" H 7070 4955 50  0000 L CNN
+F 2 "" V 6930 5000 50  0001 C CNN
+F 3 "~" H 7000 5000 50  0001 C CNN
+	1    7000 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4850 7000 4650
+Wire Wire Line
+	7000 4650 7100 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5F8E482E
+P 7000 5250
+AR Path="/5EE18B8E/5F8E482E" Ref="#PWR?"  Part="1" 
+AR Path="/5F8E482E" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8E482E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 5000 50  0001 C CNN
+F 1 "GND" H 7005 5077 50  0000 C CNN
+F 2 "" H 7000 5250 50  0001 C CNN
+F 3 "" H 7000 5250 50  0001 C CNN
+	1    7000 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5250 7000 5150
+Connection ~ 7000 4650
+Text HLabel 6350 4650 0    50   Output ~ 0
+PROX_2
+$Comp
+L Device:C C?
+U 1 1 5F8E4837
+P 6700 5000
+F 0 "C?" H 6586 5046 50  0000 R CNN
+F 1 "100nF" H 6586 4955 50  0000 R CNN
+F 2 "" H 6738 4850 50  0001 C CNN
+F 3 "~" H 6700 5000 50  0001 C CNN
+	1    6700 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4850 6700 4650
+Connection ~ 6700 4650
+Wire Wire Line
+	6700 4650 7000 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5F8E4840
+P 6700 5250
+AR Path="/5EE18B8E/5F8E4840" Ref="#PWR?"  Part="1" 
+AR Path="/5F8E4840" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8E4840" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6700 5000 50  0001 C CNN
+F 1 "GND" H 6705 5077 50  0000 C CNN
+F 2 "" H 6700 5250 50  0001 C CNN
+F 3 "" H 6700 5250 50  0001 C CNN
+	1    6700 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5250 6700 5150
+Wire Wire Line
+	3650 2550 4000 2550
+$Comp
+L Sensor_Proximity:CNY70 U?
+U 1 1 5F8E68F5
+P 4700 2450
+AR Path="/5F8E68F5" Ref="U?"  Part="1" 
+AR Path="/5F89DAAF/5F8E68F5" Ref="U?"  Part="1" 
+F 0 "U?" H 4700 2767 50  0000 C CNN
+F 1 "CNY70" H 4700 2676 50  0000 C CNN
+F 2 "OptoDevice:Vishay_CNY70" H 4700 2250 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83751/cny70.pdf" H 4700 2550 50  0001 C CNN
+	1    4700 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F8E68FB
+P 5150 2850
+F 0 "R?" H 5220 2896 50  0000 L CNN
+F 1 "220" H 5220 2805 50  0000 L CNN
+F 2 "" V 5080 2850 50  0001 C CNN
+F 3 "~" H 5150 2850 50  0001 C CNN
+	1    5150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2550 5150 2550
+Wire Wire Line
+	5150 2550 5150 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5F8E6903
+P 5150 3100
+AR Path="/5EE18B8E/5F8E6903" Ref="#PWR?"  Part="1" 
+AR Path="/5F8E6903" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8E6903" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5150 2850 50  0001 C CNN
+F 1 "GND" H 5155 2927 50  0000 C CNN
+F 2 "" H 5150 3100 50  0001 C CNN
+F 3 "" H 5150 3100 50  0001 C CNN
+	1    5150 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3100 5150 3000
+Text GLabel 5150 2000 1    50   Input ~ 0
+Vil
+Wire Wire Line
+	5150 2000 5150 2350
+Wire Wire Line
+	5150 2350 5000 2350
+Text GLabel 4300 1950 1    50   Input ~ 0
+Vil
+Wire Wire Line
+	4300 1950 4300 2350
+Wire Wire Line
+	4300 2350 4400 2350
+$Comp
+L Device:R R?
+U 1 1 5F8E6910
+P 4300 2900
+F 0 "R?" H 4370 2946 50  0000 L CNN
+F 1 "220" H 4370 2855 50  0000 L CNN
+F 2 "" V 4230 2900 50  0001 C CNN
+F 3 "~" H 4300 2900 50  0001 C CNN
+	1    4300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2750 4300 2550
+Wire Wire Line
+	4300 2550 4400 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5F8E6918
+P 4300 3150
+AR Path="/5EE18B8E/5F8E6918" Ref="#PWR?"  Part="1" 
+AR Path="/5F8E6918" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8E6918" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4300 2900 50  0001 C CNN
+F 1 "GND" H 4305 2977 50  0000 C CNN
+F 2 "" H 4300 3150 50  0001 C CNN
+F 3 "" H 4300 3150 50  0001 C CNN
+	1    4300 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3150 4300 3050
+Connection ~ 4300 2550
+Text HLabel 3650 2550 0    50   Output ~ 0
+PROX_4
+$Comp
+L Device:C C?
+U 1 1 5F8E6921
+P 4000 2900
+F 0 "C?" H 3886 2946 50  0000 R CNN
+F 1 "100nF" H 3886 2855 50  0000 R CNN
+F 2 "" H 4038 2750 50  0001 C CNN
+F 3 "~" H 4000 2900 50  0001 C CNN
+	1    4000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2750 4000 2550
+Connection ~ 4000 2550
+Wire Wire Line
+	4000 2550 4300 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5F8E692A
+P 4000 3150
+AR Path="/5EE18B8E/5F8E692A" Ref="#PWR?"  Part="1" 
+AR Path="/5F8E692A" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8E692A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 2900 50  0001 C CNN
+F 1 "GND" H 4005 2977 50  0000 C CNN
+F 2 "" H 4000 3150 50  0001 C CNN
+F 3 "" H 4000 3150 50  0001 C CNN
+	1    4000 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3150 4000 3050
+Wire Wire Line
+	3650 4650 4000 4650
+$Comp
+L Sensor_Proximity:CNY70 U?
+U 1 1 5F8E8515
+P 4700 4550
+AR Path="/5F8E8515" Ref="U?"  Part="1" 
+AR Path="/5F89DAAF/5F8E8515" Ref="U?"  Part="1" 
+F 0 "U?" H 4700 4867 50  0000 C CNN
+F 1 "CNY70" H 4700 4776 50  0000 C CNN
+F 2 "OptoDevice:Vishay_CNY70" H 4700 4350 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83751/cny70.pdf" H 4700 4650 50  0001 C CNN
+	1    4700 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F8E851B
+P 5150 4950
+F 0 "R?" H 5220 4996 50  0000 L CNN
+F 1 "220" H 5220 4905 50  0000 L CNN
+F 2 "" V 5080 4950 50  0001 C CNN
+F 3 "~" H 5150 4950 50  0001 C CNN
+	1    5150 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4650 5150 4650
+Wire Wire Line
+	5150 4650 5150 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5F8E8523
+P 5150 5200
+AR Path="/5EE18B8E/5F8E8523" Ref="#PWR?"  Part="1" 
+AR Path="/5F8E8523" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8E8523" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5150 4950 50  0001 C CNN
+F 1 "GND" H 5155 5027 50  0000 C CNN
+F 2 "" H 5150 5200 50  0001 C CNN
+F 3 "" H 5150 5200 50  0001 C CNN
+	1    5150 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5200 5150 5100
+Text GLabel 5150 4100 1    50   Input ~ 0
+Vil
+Wire Wire Line
+	5150 4100 5150 4450
+Wire Wire Line
+	5150 4450 5000 4450
+Text GLabel 4300 4050 1    50   Input ~ 0
+Vil
+Wire Wire Line
+	4300 4050 4300 4450
+Wire Wire Line
+	4300 4450 4400 4450
+$Comp
+L Device:R R?
+U 1 1 5F8E8530
+P 4300 5000
+F 0 "R?" H 4370 5046 50  0000 L CNN
+F 1 "220" H 4370 4955 50  0000 L CNN
+F 2 "" V 4230 5000 50  0001 C CNN
+F 3 "~" H 4300 5000 50  0001 C CNN
+	1    4300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4850 4300 4650
+Wire Wire Line
+	4300 4650 4400 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5F8E8538
+P 4300 5250
+AR Path="/5EE18B8E/5F8E8538" Ref="#PWR?"  Part="1" 
+AR Path="/5F8E8538" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8E8538" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4300 5000 50  0001 C CNN
+F 1 "GND" H 4305 5077 50  0000 C CNN
+F 2 "" H 4300 5250 50  0001 C CNN
+F 3 "" H 4300 5250 50  0001 C CNN
+	1    4300 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5250 4300 5150
+Connection ~ 4300 4650
+Text HLabel 3650 4650 0    50   Output ~ 0
+PROX_3
+$Comp
+L Device:C C?
+U 1 1 5F8E8541
+P 4000 5000
+F 0 "C?" H 3886 5046 50  0000 R CNN
+F 1 "100nF" H 3886 4955 50  0000 R CNN
+F 2 "" H 4038 4850 50  0001 C CNN
+F 3 "~" H 4000 5000 50  0001 C CNN
+	1    4000 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4850 4000 4650
+Connection ~ 4000 4650
+Wire Wire Line
+	4000 4650 4300 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5F8E854A
+P 4000 5250
+AR Path="/5EE18B8E/5F8E854A" Ref="#PWR?"  Part="1" 
+AR Path="/5F8E854A" Ref="#PWR?"  Part="1" 
+AR Path="/5F89DAAF/5F8E854A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 5000 50  0001 C CNN
+F 1 "GND" H 4005 5077 50  0000 C CNN
+F 2 "" H 4000 5250 50  0001 C CNN
+F 3 "" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5250 4000 5150
+Text Notes 4050 1200 0    197  ~ 39
+SENSOR DE PROXIMIDAD
+$EndSCHEMATC

@@ -1,0 +1,276 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2900 2350 2900 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5F79F333
+P 2900 3050
+AR Path="/5EE18B8E/5F79F333" Ref="#PWR?"  Part="1" 
+AR Path="/5F79F333" Ref="#PWR?"  Part="1" 
+AR Path="/5F77E969/5F79F333" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2900 2800 50  0001 C CNN
+F 1 "GND" H 2905 2877 50  0000 C CNN
+F 2 "" H 2900 3050 50  0001 C CNN
+F 3 "" H 2900 3050 50  0001 C CNN
+	1    2900 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 1750
+Wire Wire Line
+	1550 1750 900  1750
+Wire Wire Line
+	2150 1750 2150 1850
+Connection ~ 2150 1750
+Wire Wire Line
+	2450 1750 2450 2450
+Wire Wire Line
+	2150 1750 2450 1750
+Wire Wire Line
+	1550 1300 1550 1150
+Wire Wire Line
+	1850 2300 2150 2300
+Connection ~ 1850 2300
+Wire Wire Line
+	1850 2350 1850 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5F79F347
+P 1850 2350
+AR Path="/5EE18B8E/5F79F347" Ref="#PWR?"  Part="1" 
+AR Path="/5F79F347" Ref="#PWR?"  Part="1" 
+AR Path="/5F77E969/5F79F347" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1850 2100 50  0001 C CNN
+F 1 "GND" H 1855 2177 50  0000 C CNN
+F 2 "" H 1850 2350 50  0001 C CNN
+F 3 "" H 1850 2350 50  0001 C CNN
+	1    1850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2300 2150 2150
+Wire Wire Line
+	1550 2300 1850 2300
+Wire Wire Line
+	2150 1600 2150 1750
+Wire Wire Line
+	1550 1600 1550 1750
+$Comp
+L Device:R R?
+U 1 1 5F79F358
+P 1550 1450
+AR Path="/5EE18B8E/5F79F358" Ref="R?"  Part="1" 
+AR Path="/5F79F358" Ref="R?"  Part="1" 
+AR Path="/5F77E969/5F79F358" Ref="R?"  Part="1" 
+F 0 "R?" H 1618 1496 50  0000 L CNN
+F 1 "350" H 1618 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 1450 50  0001 C CNN
+F 3 "~" H 1550 1450 50  0001 C CNN
+	1    1550 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1300 2150 1150
+Wire Wire Line
+	1850 1100 1850 1150
+Connection ~ 1850 1150
+Wire Wire Line
+	2150 1150 1850 1150
+Wire Wire Line
+	1550 1150 1850 1150
+$Comp
+L Amplifier_Instrumentation:AD620 TL?
+U 1 1 5F79F380
+P 3000 2650
+AR Path="/5EE18B8E/5F79F380" Ref="TL?"  Part="1" 
+AR Path="/5F79F380" Ref="TL?"  Part="1" 
+AR Path="/5F77E969/5F79F380" Ref="TL?"  Part="1" 
+F 0 "TL?" H 3200 3000 50  0000 C CNN
+F 1 "AD620ARZ" H 3200 2900 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3000 2650 50  0001 C CNN
+F 3 "~" H 3000 2650 50  0001 C CNN
+	1    3000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3050 2900 2950
+Text HLabel 8550 3200 2    50   Output ~ 0
+AN0
+Text HLabel 8550 5700 2    50   Output ~ 0
+AN1
+Text HLabel 3600 2650 2    50   Output ~ 0
+AN3
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5FA55451
+P 1300 2050
+F 0 "J?" H 1272 1932 50  0000 R CNN
+F 1 "celda_1" H 1272 2023 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1300 2050 50  0001 C CNN
+F 3 "~" H 1300 2050 50  0001 C CNN
+	1    1300 2050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1500 1950 1550 1950
+Wire Wire Line
+	1550 1750 1550 1950
+Wire Wire Line
+	1500 2050 1550 2050
+Wire Wire Line
+	1550 2050 1550 2300
+$Comp
+L Device:R R?
+U 1 1 5FA89BD5
+P 2150 1450
+AR Path="/5EE18B8E/5FA89BD5" Ref="R?"  Part="1" 
+AR Path="/5FA89BD5" Ref="R?"  Part="1" 
+AR Path="/5F77E969/5FA89BD5" Ref="R?"  Part="1" 
+F 0 "R?" H 2218 1496 50  0000 L CNN
+F 1 "350" H 2218 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2150 1450 50  0001 C CNN
+F 3 "~" H 2150 1450 50  0001 C CNN
+	1    2150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FA89E0D
+P 2150 2000
+AR Path="/5EE18B8E/5FA89E0D" Ref="R?"  Part="1" 
+AR Path="/5FA89E0D" Ref="R?"  Part="1" 
+AR Path="/5F77E969/5FA89E0D" Ref="R?"  Part="1" 
+F 0 "R?" H 2218 2046 50  0000 L CNN
+F 1 "350" H 2218 1955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2150 2000 50  0001 C CNN
+F 3 "~" H 2150 2000 50  0001 C CNN
+	1    2150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5FA8ACE5
+P 1850 1100
+F 0 "#PWR?" H 1850 950 50  0001 C CNN
+F 1 "VDD" H 1865 1273 50  0000 C CNN
+F 2 "" H 1850 1100 50  0001 C CNN
+F 3 "" H 1850 1100 50  0001 C CNN
+	1    1850 1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5FA8B775
+P 2900 1550
+F 0 "#PWR?" H 2900 1400 50  0001 C CNN
+F 1 "VDD" H 2915 1723 50  0000 C CNN
+F 2 "" H 2900 1550 50  0001 C CNN
+F 3 "" H 2900 1550 50  0001 C CNN
+	1    2900 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA8D9E0
+P 3200 1800
+F 0 "C?" H 3315 1846 50  0000 L CNN
+F 1 "C" H 3315 1755 50  0000 L CNN
+F 2 "" H 3238 1650 50  0001 C CNN
+F 3 "~" H 3200 1800 50  0001 C CNN
+	1    3200 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1650 3200 1600
+Wire Wire Line
+	3200 1600 2900 1600
+Connection ~ 2900 1600
+Wire Wire Line
+	2900 1600 2900 1550
+$Comp
+L power:GND #PWR?
+U 1 1 5FA8F567
+P 3200 2000
+AR Path="/5EE18B8E/5FA8F567" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8F567" Ref="#PWR?"  Part="1" 
+AR Path="/5F77E969/5FA8F567" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3200 1750 50  0001 C CNN
+F 1 "GND" H 3205 1827 50  0000 C CNN
+F 2 "" H 3200 2000 50  0001 C CNN
+F 3 "" H 3200 2000 50  0001 C CNN
+	1    3200 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1950 3200 2000
+Text HLabel 3050 5700 0    50   Output ~ 0
+AN2
+Wire Wire Line
+	2450 2450 2600 2450
+Wire Wire Line
+	3400 2650 3600 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5FB68B72
+P 3100 3050
+AR Path="/5EE18B8E/5FB68B72" Ref="#PWR?"  Part="1" 
+AR Path="/5FB68B72" Ref="#PWR?"  Part="1" 
+AR Path="/5F77E969/5FB68B72" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3100 2800 50  0001 C CNN
+F 1 "GND" H 3105 2877 50  0000 C CNN
+F 2 "" H 3100 3050 50  0001 C CNN
+F 3 "" H 3100 3050 50  0001 C CNN
+	1    3100 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3050 3100 2950
+$Comp
+L Device:R R?
+U 1 1 5FB6E1AF
+P 2250 2650
+F 0 "R?" H 2181 2696 50  0000 R CNN
+F 1 "R" H 2181 2605 50  0000 R CNN
+F 2 "" V 2180 2650 50  0001 C CNN
+F 3 "~" H 2250 2650 50  0001 C CNN
+	1    2250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2850 2450 2850
+Wire Wire Line
+	2450 2850 2450 3100
+Wire Wire Line
+	2450 3100 900  3100
+Wire Wire Line
+	900  1750 900  3100
+Wire Wire Line
+	2250 2500 2250 2450
+Wire Wire Line
+	2250 2450 2350 2450
+Wire Wire Line
+	2350 2450 2350 2550
+Wire Wire Line
+	2350 2550 2600 2550
+Wire Wire Line
+	2600 2750 2350 2750
+Wire Wire Line
+	2350 2750 2350 2850
+Wire Wire Line
+	2350 2850 2250 2850
+Wire Wire Line
+	2250 2850 2250 2800
+$EndSCHEMATC

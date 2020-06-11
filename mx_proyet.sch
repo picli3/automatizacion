@@ -1,0 +1,663 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 3
+Title ""
+Date "lun. 30 mars 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5EE541C3
+P 2100 9550
+AR Path="/5EE18B8E/5EE541C3" Ref="#PWR?"  Part="1" 
+AR Path="/5EE541C3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 9300 50  0001 C CNN
+F 1 "GND" H 2105 9377 50  0000 C CNN
+F 2 "" H 2100 9550 50  0001 C CNN
+F 3 "" H 2100 9550 50  0001 C CNN
+	1    2100 9550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8150 3800 1    50   Input ~ 0
+Vil
+$Comp
+L power:GND #PWR?
+U 1 1 5EE542DA
+P 8150 7050
+AR Path="/5EE18B8E/5EE542DA" Ref="#PWR?"  Part="1" 
+AR Path="/5EE542DA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8150 6800 50  0001 C CNN
+F 1 "GND" V 8155 6922 50  0000 R CNN
+F 2 "" H 8150 7050 50  0001 C CNN
+F 3 "" H 8150 7050 50  0001 C CNN
+	1    8150 7050
+	1    0    0    -1  
+$EndComp
+Text GLabel 14250 2350 0    50   Input ~ 0
+Vmount
+Text GLabel 14250 1850 0    50   Input ~ 0
+Vmount
+Text GLabel 13150 1250 1    50   Input ~ 0
+Vil
+$Comp
+L power:GND #PWR?
+U 1 1 5EE5441A
+P 13150 2950
+AR Path="/5EE18B8E/5EE5441A" Ref="#PWR?"  Part="1" 
+AR Path="/5EE5441A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 13150 2700 50  0001 C CNN
+F 1 "GND" V 13155 2822 50  0000 R CNN
+F 2 "" H 13150 2950 50  0001 C CNN
+F 3 "" H 13150 2950 50  0001 C CNN
+	1    13150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 U?
+U 1 1 5EE54438
+P 14450 2150
+AR Path="/5EE18B8E/5EE54438" Ref="U?"  Part="1" 
+AR Path="/5EE54438" Ref="U?"  Part="1" 
+F 0 "U?" H 14368 1625 50  0000 C CNN
+F 1 "NEMA-17" H 14368 1716 50  0000 C CNN
+F 2 "Module:Adafruit_HUZZAH_ESP8266_breakout_WithMountingHoles" H 14450 2250 50  0001 C CNN
+F 3 "" H 14450 2250 50  0001 C CNN
+	1    14450 2150
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Rotary_Encoder U?
+U 1 1 5EE54444
+P 4350 1050
+AR Path="/5EE18B8E/5EE54444" Ref="U?"  Part="1" 
+AR Path="/5EE54444" Ref="U?"  Part="1" 
+F 0 "U?" H 4350 1300 50  0000 L CNN
+F 1 "RotaryEncoder" H 4100 1400 50  0000 L CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E_Vertical_H20mm" H 4350 1250 50  0001 C CNN
+F 3 "" H 4350 1250 50  0001 C CNN
+	1    4350 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_PIC18:PIC18F45K50_QFP U?
+U 1 1 5EE542D3
+P 8250 5400
+AR Path="/5EE18B8E/5EE542D3" Ref="U?"  Part="1" 
+AR Path="/5EE542D3" Ref="U?"  Part="1" 
+F 0 "U?" H 8250 6175 50  0000 C CNN
+F 1 "PIC18F45K50" H 8250 6084 50  0000 C CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502382-0370_1x03-1MP_P1.25mm_Vertical" H 8300 5500 50  0001 C CNN
+F 3 "" H 8300 5500 50  0001 C CNN
+	1    8250 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3800 8150 3900
+Wire Wire Line
+	8250 4000 8250 3900
+Wire Wire Line
+	8250 3900 8150 3900
+Connection ~ 8150 3900
+Wire Wire Line
+	8150 3900 8150 4000
+Wire Wire Line
+	8150 6900 8150 7000
+Wire Wire Line
+	8250 6900 8250 7000
+Wire Wire Line
+	8250 7000 8150 7000
+Connection ~ 8150 7000
+Wire Wire Line
+	8150 7000 8150 7050
+Wire Wire Line
+	6550 4800 6150 4800
+Text Label 6250 4800 0    50   ~ 0
+AN0
+Wire Wire Line
+	6550 4900 6150 4900
+Text Label 6250 4900 0    50   ~ 0
+AN1
+Wire Wire Line
+	6550 5000 6150 5000
+Text Label 6250 5000 0    50   ~ 0
+AN2
+Text Label 6250 5100 0    50   ~ 0
+AN3
+Wire Wire Line
+	6150 5100 6550 5100
+Wire Wire Line
+	13650 2150 14250 2150
+Wire Wire Line
+	13650 2250 14250 2250
+Wire Wire Line
+	13650 2050 14250 2050
+Wire Wire Line
+	13650 1950 14250 1950
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 U?
+U 1 1 5EE5443E
+P 13150 2050
+AR Path="/5EE18B8E/5EE5443E" Ref="U?"  Part="1" 
+AR Path="/5EE5443E" Ref="U?"  Part="1" 
+F 0 "U?" H 13550 2800 50  0000 C CNN
+F 1 "A4988" H 13550 2700 50  0000 C CNN
+F 2 "Module:A4988" H 13150 2050 50  0001 C CNN
+F 3 "" H 13150 2050 50  0001 C CNN
+	1    13150 2050
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2250 2300 1850 1100
+U 5F77E969
+F0 "SensorPeso" 50
+F1 "SensorPeso.sch" 50
+F2 "AN0" O R 4100 2700 50 
+F3 "AN1" O R 4100 2800 50 
+F4 "AN2" O R 4100 2900 50 
+F5 "AN3" O R 4100 3000 50 
+$EndSheet
+Text Notes 2600 3150 0    197  ~ 39
+Sensor\nCarga
+Wire Wire Line
+	13150 2950 13150 2900
+Wire Wire Line
+	13350 2850 13350 2900
+Wire Wire Line
+	13350 2900 13150 2900
+Connection ~ 13150 2900
+Wire Wire Line
+	13150 2900 13150 2850
+Wire Wire Line
+	13150 1250 13150 1350
+Text Notes 3550 4950 2    197  ~ 39
+SENSOR \nPROXIMIDAD
+$Sheet
+S 1600 3850 2500 1700
+U 5F89DAAF
+F0 "SesorProximidad" 50
+F1 "SesorProximidad.sch" 50
+F2 "PROX_1" O R 4100 4450 50 
+F3 "PROX_2" O R 4100 4600 50 
+F4 "PROX_4" O R 4100 4750 50 
+F5 "PROX_3" O R 4100 4900 50 
+$EndSheet
+Wire Wire Line
+	4100 2700 4450 2700
+Wire Wire Line
+	4100 2800 4450 2800
+Wire Wire Line
+	4100 2900 4450 2900
+Wire Wire Line
+	4100 3000 4450 3000
+Entry Wire Line
+	4450 2700 4550 2800
+Entry Wire Line
+	4450 2800 4550 2900
+Entry Wire Line
+	4450 2900 4550 3000
+Entry Wire Line
+	4450 3000 4550 3100
+Wire Bus Line
+	6050 4000 4550 4000
+Entry Wire Line
+	6050 4700 6150 4800
+Entry Wire Line
+	6050 4800 6150 4900
+Entry Wire Line
+	6050 4900 6150 5000
+Entry Wire Line
+	6050 5000 6150 5100
+Text Label 4250 2700 0    50   ~ 0
+AN0
+Text Label 4250 2800 0    50   ~ 0
+AN1
+Text Label 4250 2900 0    50   ~ 0
+AN2
+Text Label 4250 3000 0    50   ~ 0
+AN3
+Wire Wire Line
+	4100 4450 4450 4450
+Wire Wire Line
+	4100 4600 4450 4600
+Wire Wire Line
+	4100 4750 4450 4750
+Wire Wire Line
+	4100 4900 4450 4900
+Entry Wire Line
+	4450 4450 4550 4550
+Entry Wire Line
+	4450 4600 4550 4700
+Entry Wire Line
+	4450 4750 4550 4850
+Entry Wire Line
+	4450 4900 4550 5000
+Text Label 4150 4450 0    50   ~ 0
+PROX_1
+Text Label 4150 4600 0    50   ~ 0
+PROX_2
+Text Label 4150 4750 0    50   ~ 0
+PROX_3
+Text Label 4150 4900 0    50   ~ 0
+PROX_4
+Entry Wire Line
+	5700 5400 5800 5500
+Entry Wire Line
+	5700 5500 5800 5600
+Entry Wire Line
+	5700 5600 5800 5700
+Entry Wire Line
+	5700 5700 5800 5800
+Wire Wire Line
+	5800 5500 6550 5500
+Wire Wire Line
+	5800 5600 6550 5600
+Wire Wire Line
+	5800 5700 6550 5700
+Wire Wire Line
+	5800 5800 6550 5800
+Text Label 6200 5500 0    50   ~ 0
+PROX_1
+Text Label 6200 5600 0    50   ~ 0
+PROX_2
+Text Label 6200 5700 0    50   ~ 0
+PROX_3
+Text Label 6200 5800 0    50   ~ 0
+PROX_4
+Wire Bus Line
+	4550 5200 5700 5200
+Wire Wire Line
+	12750 1750 12650 1750
+Wire Wire Line
+	12650 1750 12650 1650
+Wire Wire Line
+	12650 1650 12750 1650
+Wire Wire Line
+	12750 2050 12250 2050
+Text Label 12350 2050 0    50   ~ 0
+STEP_1
+Text Label 12350 2150 0    50   ~ 0
+DIR_1
+Wire Wire Line
+	12750 2150 12250 2150
+NoConn ~ 12750 2350
+NoConn ~ 12750 2450
+NoConn ~ 12750 2550
+NoConn ~ 12750 1950
+Entry Wire Line
+	12150 1950 12250 2050
+Entry Wire Line
+	12150 2050 12250 2150
+Text GLabel 14250 4500 0    50   Input ~ 0
+Vmount
+Text GLabel 14250 4000 0    50   Input ~ 0
+Vmount
+Text GLabel 13150 3450 1    50   Input ~ 0
+Vil
+$Comp
+L power:GND #PWR?
+U 1 1 5F9C2D48
+P 13150 5100
+AR Path="/5EE18B8E/5F9C2D48" Ref="#PWR?"  Part="1" 
+AR Path="/5F9C2D48" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 13150 4850 50  0001 C CNN
+F 1 "GND" V 13155 4972 50  0000 R CNN
+F 2 "" H 13150 5100 50  0001 C CNN
+F 3 "" H 13150 5100 50  0001 C CNN
+	1    13150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 U?
+U 1 1 5F9C2D4E
+P 14450 4300
+AR Path="/5EE18B8E/5F9C2D4E" Ref="U?"  Part="1" 
+AR Path="/5F9C2D4E" Ref="U?"  Part="1" 
+F 0 "U?" H 14368 3775 50  0000 C CNN
+F 1 "NEMA-17" H 14368 3866 50  0000 C CNN
+F 2 "Module:Adafruit_HUZZAH_ESP8266_breakout_WithMountingHoles" H 14450 4400 50  0001 C CNN
+F 3 "" H 14450 4400 50  0001 C CNN
+	1    14450 4300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13650 4300 14250 4300
+Wire Wire Line
+	13650 4400 14250 4400
+Wire Wire Line
+	13650 4200 14250 4200
+Wire Wire Line
+	13650 4100 14250 4100
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 U?
+U 1 1 5F9C2D58
+P 13150 4200
+AR Path="/5EE18B8E/5F9C2D58" Ref="U?"  Part="1" 
+AR Path="/5F9C2D58" Ref="U?"  Part="1" 
+F 0 "U?" H 13550 4950 50  0000 C CNN
+F 1 "A4988" H 13550 4850 50  0000 C CNN
+F 2 "Module:A4988" H 13150 4200 50  0001 C CNN
+F 3 "" H 13150 4200 50  0001 C CNN
+	1    13150 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13150 5100 13150 5050
+Wire Wire Line
+	13350 5000 13350 5050
+Wire Wire Line
+	13350 5050 13150 5050
+Connection ~ 13150 5050
+Wire Wire Line
+	13150 5050 13150 5000
+Wire Wire Line
+	13150 3450 13150 3500
+Wire Wire Line
+	12750 3900 12650 3900
+Wire Wire Line
+	12650 3900 12650 3800
+Wire Wire Line
+	12650 3800 12750 3800
+Wire Wire Line
+	12750 4200 12250 4200
+Text Label 12350 4200 0    50   ~ 0
+STEP_2
+Text Label 12350 4300 0    50   ~ 0
+DIR_2
+Wire Wire Line
+	12750 4300 12250 4300
+NoConn ~ 12750 4500
+NoConn ~ 12750 4600
+NoConn ~ 12750 4700
+NoConn ~ 12750 4100
+Entry Wire Line
+	12150 4100 12250 4200
+Entry Wire Line
+	12150 4200 12250 4300
+Text GLabel 14250 6650 0    50   Input ~ 0
+Vmount
+Text GLabel 14250 6150 0    50   Input ~ 0
+Vmount
+Text GLabel 13150 5600 1    50   Input ~ 0
+Vil
+$Comp
+L power:GND #PWR?
+U 1 1 5F9C5AEE
+P 13150 7250
+AR Path="/5EE18B8E/5F9C5AEE" Ref="#PWR?"  Part="1" 
+AR Path="/5F9C5AEE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 13150 7000 50  0001 C CNN
+F 1 "GND" V 13155 7122 50  0000 R CNN
+F 2 "" H 13150 7250 50  0001 C CNN
+F 3 "" H 13150 7250 50  0001 C CNN
+	1    13150 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 U?
+U 1 1 5F9C5AF4
+P 14450 6450
+AR Path="/5EE18B8E/5F9C5AF4" Ref="U?"  Part="1" 
+AR Path="/5F9C5AF4" Ref="U?"  Part="1" 
+F 0 "U?" H 14368 5925 50  0000 C CNN
+F 1 "NEMA-17" H 14368 6016 50  0000 C CNN
+F 2 "Module:Adafruit_HUZZAH_ESP8266_breakout_WithMountingHoles" H 14450 6550 50  0001 C CNN
+F 3 "" H 14450 6550 50  0001 C CNN
+	1    14450 6450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13650 6450 14250 6450
+Wire Wire Line
+	13650 6550 14250 6550
+Wire Wire Line
+	13650 6350 14250 6350
+Wire Wire Line
+	13650 6250 14250 6250
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 U?
+U 1 1 5F9C5AFE
+P 13150 6350
+AR Path="/5EE18B8E/5F9C5AFE" Ref="U?"  Part="1" 
+AR Path="/5F9C5AFE" Ref="U?"  Part="1" 
+F 0 "U?" H 13550 7100 50  0000 C CNN
+F 1 "A4988" H 13550 7000 50  0000 C CNN
+F 2 "Module:A4988" H 13150 6350 50  0001 C CNN
+F 3 "" H 13150 6350 50  0001 C CNN
+	1    13150 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13150 7250 13150 7200
+Wire Wire Line
+	13350 7150 13350 7200
+Wire Wire Line
+	13350 7200 13150 7200
+Connection ~ 13150 7200
+Wire Wire Line
+	13150 7200 13150 7150
+Wire Wire Line
+	13150 5600 13150 5650
+Wire Wire Line
+	12750 6050 12650 6050
+Wire Wire Line
+	12650 6050 12650 5950
+Wire Wire Line
+	12650 5950 12750 5950
+Wire Wire Line
+	12750 6350 12250 6350
+Text Label 12350 6350 0    50   ~ 0
+STEP_3
+Text Label 12350 6450 0    50   ~ 0
+DIR_3
+Wire Wire Line
+	12750 6450 12250 6450
+NoConn ~ 12750 6650
+NoConn ~ 12750 6750
+NoConn ~ 12750 6850
+NoConn ~ 12750 6250
+Entry Wire Line
+	12150 6250 12250 6350
+Entry Wire Line
+	12150 6350 12250 6450
+Text GLabel 14250 8850 0    50   Input ~ 0
+Vmount
+Text GLabel 14250 8350 0    50   Input ~ 0
+Vmount
+Text GLabel 13150 7750 1    50   Input ~ 0
+Vil
+$Comp
+L power:GND #PWR?
+U 1 1 5F9C84F4
+P 13150 9450
+AR Path="/5EE18B8E/5F9C84F4" Ref="#PWR?"  Part="1" 
+AR Path="/5F9C84F4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 13150 9200 50  0001 C CNN
+F 1 "GND" V 13155 9322 50  0000 R CNN
+F 2 "" H 13150 9450 50  0001 C CNN
+F 3 "" H 13150 9450 50  0001 C CNN
+	1    13150 9450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 U?
+U 1 1 5F9C84FA
+P 14450 8650
+AR Path="/5EE18B8E/5F9C84FA" Ref="U?"  Part="1" 
+AR Path="/5F9C84FA" Ref="U?"  Part="1" 
+F 0 "U?" H 14368 8125 50  0000 C CNN
+F 1 "NEMA-17" H 14368 8216 50  0000 C CNN
+F 2 "Module:Adafruit_HUZZAH_ESP8266_breakout_WithMountingHoles" H 14450 8750 50  0001 C CNN
+F 3 "" H 14450 8750 50  0001 C CNN
+	1    14450 8650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13650 8650 14250 8650
+Wire Wire Line
+	13650 8750 14250 8750
+Wire Wire Line
+	13650 8550 14250 8550
+Wire Wire Line
+	13650 8450 14250 8450
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 U?
+U 1 1 5F9C8504
+P 13150 8550
+AR Path="/5EE18B8E/5F9C8504" Ref="U?"  Part="1" 
+AR Path="/5F9C8504" Ref="U?"  Part="1" 
+F 0 "U?" H 13550 9300 50  0000 C CNN
+F 1 "A4988" H 13550 9200 50  0000 C CNN
+F 2 "Module:A4988" H 13150 8550 50  0001 C CNN
+F 3 "" H 13150 8550 50  0001 C CNN
+	1    13150 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13150 9450 13150 9400
+Wire Wire Line
+	13350 9350 13350 9400
+Wire Wire Line
+	13350 9400 13150 9400
+Connection ~ 13150 9400
+Wire Wire Line
+	13150 9400 13150 9350
+Wire Wire Line
+	13150 7750 13150 7850
+Wire Wire Line
+	12750 8250 12650 8250
+Wire Wire Line
+	12650 8250 12650 8150
+Wire Wire Line
+	12650 8150 12750 8150
+Wire Wire Line
+	12750 8550 12250 8550
+Text Label 12350 8550 0    50   ~ 0
+STEP_4
+Text Label 12350 8650 0    50   ~ 0
+DIR_4
+Wire Wire Line
+	12750 8650 12250 8650
+NoConn ~ 12750 8850
+NoConn ~ 12750 8950
+NoConn ~ 12750 9050
+NoConn ~ 12750 8450
+Entry Wire Line
+	12150 8450 12250 8550
+Entry Wire Line
+	12150 8550 12250 8650
+Wire Bus Line
+	12150 9100 10800 9100
+Text Label 10200 4700 0    50   ~ 0
+STEP_1
+Wire Wire Line
+	9950 4700 10700 4700
+Text Label 10200 4800 0    50   ~ 0
+DIR_1
+Wire Wire Line
+	9950 4800 10700 4800
+Text Label 10200 4900 0    50   ~ 0
+STEP_2
+Wire Wire Line
+	9950 4900 10700 4900
+Text Label 10200 5000 0    50   ~ 0
+DIR_2
+Wire Wire Line
+	9950 5000 10700 5000
+Text Label 10200 5200 0    50   ~ 0
+DIR_3
+Text Label 10200 5300 0    50   ~ 0
+STEP_4
+Text Label 10200 5400 0    50   ~ 0
+DIR_4
+Wire Wire Line
+	9950 5100 10700 5100
+Wire Wire Line
+	9950 5200 10700 5200
+Wire Wire Line
+	9950 5300 10700 5300
+Wire Wire Line
+	9950 5400 10700 5400
+Entry Wire Line
+	10700 4700 10800 4800
+Entry Wire Line
+	10700 4800 10800 4900
+Entry Wire Line
+	10700 4900 10800 5000
+Entry Wire Line
+	10700 5000 10800 5100
+Entry Wire Line
+	10700 5100 10800 5200
+Entry Wire Line
+	10700 5200 10800 5300
+Entry Wire Line
+	10700 5300 10800 5400
+Entry Wire Line
+	10700 5400 10800 5500
+Text Label 10200 5100 0    50   ~ 0
+STEP_3
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5FAE5BE4
+P 2400 9350
+F 0 "J?" H 2480 9392 50  0000 L CNN
+F 1 "Power" H 2480 9301 50  0000 L CNN
+F 2 "" H 2400 9350 50  0001 C CNN
+F 3 "~" H 2400 9350 50  0001 C CNN
+	1    2400 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5FAE7467
+P 2100 9050
+F 0 "#PWR?" H 2100 8900 50  0001 C CNN
+F 1 "VDD" H 2115 9223 50  0000 C CNN
+F 2 "" H 2100 9050 50  0001 C CNN
+F 3 "" H 2100 9050 50  0001 C CNN
+	1    2100 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 9250 2200 9250
+$Comp
+L power:VCC #PWR?
+U 1 1 5FAECE8C
+P 1900 9050
+F 0 "#PWR?" H 1900 8900 50  0001 C CNN
+F 1 "VCC" H 1915 9223 50  0000 C CNN
+F 2 "" H 1900 9050 50  0001 C CNN
+F 3 "" H 1900 9050 50  0001 C CNN
+	1    1900 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 9050 1900 9350
+Wire Wire Line
+	1900 9350 2200 9350
+Wire Wire Line
+	2100 9550 2100 9450
+Wire Wire Line
+	2100 9450 2200 9450
+Wire Wire Line
+	2100 9050 2100 9250
+Wire Bus Line
+	4550 4550 4550 5200
+Wire Bus Line
+	4550 2800 4550 4000
+Wire Bus Line
+	6050 4000 6050 5000
+Wire Bus Line
+	5700 5200 5700 5700
+Wire Bus Line
+	10800 4800 10800 9100
+Wire Bus Line
+	12150 1950 12150 9100
+$EndSCHEMATC

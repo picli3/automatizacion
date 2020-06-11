@@ -1,0 +1,11 @@
+*.sch-bak
+*.cache.lib
+fp-lib-table
+fp-info-cache
+*.dcm
+*.kicad_pcb-bak
+*.xml
+*.csv
+
+
+
