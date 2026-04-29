@@ -1,11 +1,11 @@
 # automatizacion
 
-Proyecto electrónico orientado a automatización, con PCB desarrollada en KiCad para integrar control, sensado o accionamiento dentro de una solución práctica.
+Proyecto orientado a automatización electrónica, integrando bloques como **sensor de proximidad** y **sensor de peso** dentro de una solución de control más amplia.
+
+## Propósito del proyecto
+El repositorio parece reunir distintos módulos de sensado para construir un sistema automatizado capaz de detectar presencia, peso u otras condiciones físicas dentro de un proceso.
 
 ## Qué incluye
-- esquemáticos o archivos de diseño en KiCad
-- PCB o documentación asociada
-- base reutilizable para análisis, fabricación o mejora del proyecto
-
-## Propósito general
-Este repositorio busca concentrar el diseño de hardware del proyecto en un formato editable y reutilizable, facilitando pruebas, documentación y futuras iteraciones del circuito.
+- esquemáticos de sensores y proyecto principal
+- base útil para automatización y control industrial ligero o experimental
+- archivos editables para evolución del diseño
